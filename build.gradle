@@ -30,7 +30,7 @@ dependencies {
     runtime('com.h2database:h2')
     compile('p6spy:p6spy:3.7.0')
 
-    compileOnly('org.projectlombok:lombok:1.16.20')
+    compileOnly('org.projectlombok:lombok:1.18.0')
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
