@@ -15,6 +15,10 @@ public class P6spySampleApplication {
 
     @Bean
     public CommandLineRunner runner(final PersonDao dao) {
+        // This will call prepared statement
         return args -> dao.findById(1);
+
+        // This will call callable statement
+        //return args -> dao.getPersonNameById(1);
     }
 }
